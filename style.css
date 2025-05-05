@@ -24,6 +24,7 @@ body{
 }
 
 header{
+    z-index: 999;
     height: 60px;
     width: 100%;
     position: fixed;
@@ -101,14 +102,13 @@ section {
     border-radius: 0 0 12px 12px;
 }
 
-.container-pizzas{
+.container-produtos{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .pizza {
     position: relative;
-    background-color: tomato;
     display: flex;
     border-radius: 12px;
 }
@@ -168,7 +168,63 @@ section {
     opacity: 0;
 }
 .cardapio {
-    background-color: #523493;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+.titulo-secao{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.titulo-secao h3{
+    font-size: 40px;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.opcoes-cardapio.bebida {
+    border: none;
+}
+.titulo-opcoes {
+    display: flex;
+    justify-content: space-between;
+    color: var(--primary-color);
+}
+.titulo-opcoes h4{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.titulo-opcoes a {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.opcoes-cardapio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-bottom:  2px solid var(--secundary-color);
+    height: 300px;
+}
+.pizza.bebida {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    padding: 16px;
+    transition: .5s;
+}
+.pizza.bebida:hover {
+    box-shadow: 2px 2px 8px #CCC;
+}
+.pizza.bebida .valor{
+    color: var(--primary-color);
+    width: 100%;
+}
+.pizza.bebida .descricao{
+    font-size: 8px;
 }
 .servicos {
     background-color: #251739;
