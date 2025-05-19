@@ -390,4 +390,71 @@ footer{
         display: none;
     }
 
+    .container-produtos{
+        gap: 32px;
+    }
+
+    .container-produtos .pizza {
+        width: 100%;
+    }
+
+    .container-produtos img{
+        width: 100%;
+    }
+
+    .container-produtos .pizza:nth-last-child(-n+2)
+     {
+        display: none;
+    }
+
+    .cardapio{
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .pizza.bebida:nth-last-child(-n+3){
+        display: none;
+    }
+
+    .pizza.bebida {
+        width: auto;
+    }
+
+    .opcoes-servicos{
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .servico-card{
+        height: 260px;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .servico-card p{
+        width: 70%;
+    }
+
+    .contatos-container{
+        height: 400px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contatos-item {
+        padding: 0;
+    }
+
+    .contatos-item:nth-child(2){
+        display: none;
+    }
+
+    .contatos-item.social {
+        align-items: end;
+    }
+
+    .creditos {
+        margin-bottom: 64px;
+    }
 }
