@@ -18,6 +18,10 @@ ul,ol,li{
     --default-padding: 0px 80px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: "Poppins", sans-serif;
     background-color: var(--secundary-color);
@@ -33,6 +37,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: var(--default-padding);
+    background-color: #fff5;
 }
 header menu{
     display: flex;
