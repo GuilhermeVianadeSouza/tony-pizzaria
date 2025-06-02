@@ -464,14 +464,20 @@ footer{
 @media (max-width: 768px) {
 
     header {
-        justify-content: space-between;
+        justify-content: space-evenly;
         left:12px;
         top:16px;
         padding: 0;
  }
 
+    header menu {
+        display: flex;
+        justify-content: space-between;
+ }
+
     .hero {
        padding: 0;
+       font-size: 500px;
     }
 
     .hero img{
@@ -494,6 +500,7 @@ footer{
 
     .container-produtos{
         gap: 32px;
+        padding: 0;
     }
 
     .container-produtos .pizza {
@@ -511,10 +518,15 @@ footer{
 
     .servicos {
         display: flex;
-        width: 320px;
+        width: 100%;
         height: 980px;
         gap: 10px;
         padding: 10px;
+    }
+    .servicos .titulo-secao {
+        display: center;
+        align-items: center;
+        
     }
 
     .servico-card {
@@ -537,7 +549,9 @@ footer{
         align-items: absolute;
     }
 
-    .contatos-item.social{
-        justify-content: space-between;
+    .contatos-item social {
+        flex-direction: row;
     }
+
+    
 }
