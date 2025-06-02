@@ -464,6 +464,7 @@ footer{
 @media (max-width: 768px) {
 
     header {
+        position: absolute;
         justify-content: space-evenly;
         left:12px;
         top:16px;
@@ -473,21 +474,67 @@ footer{
     header menu {
         display: flex;
         justify-content: space-between;
+        position: fixed;
+        width: 100vw;
+        height: 64px;
+        z-index: 999;
+        gap:12px;
+        font-size: 16px;
+ }
+
+ header img{
+    filter: brightness(0) invert(1);
+ }
+
+ header button img {
+    filter: none;
+ }
+
+ .home{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    grid-template-rows: none;
+    height: 568px;
+    background-image: url(img/background-mobile.png);
+       background-size: 100%;
+       background-color: var(--primary-color);
+       background-position: center;
+       background-repeat: no-repeat;
+       opacity: 90%;
  }
 
     .hero {
+       flex-direction: column-reverse;
+       align-items: start;
+       justify-content: end;
        padding: 0;
-       font-size: 500px;
+       left: 0;
+    }
+
+    .hero h2 {
+        color: white;
+        padding: 0;
+        font-size: 2rem;
+        width: 248px;
+        height: 192px;
+        justify-content: space-between;
+    }
+
+    .hero span {
+        background-color: white;
     }
 
     .hero img{
         display: none;
     }
 
-    .cardapio {
-        justify-content: center;
-        align-items: center;
+    .home .container-produtos{
+        display: none;
+    }
 
+    .titulo-opcoes{
+        width: 100%;
     }
 
     .opcoes-cardapio h4{
@@ -497,14 +544,28 @@ footer{
     .opcoes-cardapio a {
         display: none;
     }
-
+    
     .container-produtos{
-        gap: 32px;
-        padding: 0;
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .container-produtos .pizza {
+    .container-produtos .pizza{
         width: 100%;
+    }
+
+    .container-produtos .pizza img{
+        width: 100%;
+    }
+
+    .pizza.bebida{
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        padding: 0;
     }
 
     .container-produtos .pizza:nth-last-child(-n+3){
@@ -514,6 +575,12 @@ footer{
     .container-produtos .pizza.bebida:nth-last-child(-n+5){
         display: none;
         width: auto;
+    }
+
+    cardapio {
+        justify-content: center;
+        height: auto;
+        gap: 24px;
     }
 
     .servicos {
@@ -542,16 +609,19 @@ footer{
         display: none;
     }
 
-    .contatos-container {
+    .contatos-container  {
         height: 587px;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: absolute;
     }
 
-    .contatos-item social {
+    .contatos-item.social menu {
         flex-direction: row;
+        justify-content: space-around;
     }
 
-    
+    .creditos{
+        font-size: 12px;
+    }
 }
