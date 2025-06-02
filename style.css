@@ -533,9 +533,6 @@ footer{
         display: none;
     }
 
-    .titulo-opcoes{
-        width: 100%;
-    }
 
     .opcoes-cardapio h4{
         flex-wrap: wrap;
@@ -559,6 +556,7 @@ footer{
     .container-produtos .pizza img{
         width: 100%;
     }
+    
 
     .pizza.bebida{
         width: auto;
@@ -577,10 +575,11 @@ footer{
         width: auto;
     }
 
-    cardapio {
-        justify-content: center;
+    .container-produtos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         height: auto;
-        gap: 24px;
     }
 
     .servicos {
@@ -590,10 +589,8 @@ footer{
         gap: 10px;
         padding: 10px;
     }
-    .servicos .titulo-secao {
-        display: center;
-        align-items: center;
-        
+    .titulo-secao{
+        justify-content: center;
     }
 
     .servico-card {
@@ -618,7 +615,7 @@ footer{
 
     .contatos-item.social menu {
         flex-direction: row;
-        justify-content: space-around;
+       
     }
 
     .creditos{
